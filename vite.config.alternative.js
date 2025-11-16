@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Alternative config for deployment issues
 export default defineConfig({
   plugins: [react()],
-  base: './', // Relative paths work on all platforms
+  base: './', // Relative paths - works everywhere
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
